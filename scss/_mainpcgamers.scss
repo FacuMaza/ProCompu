@@ -1,0 +1,197 @@
+@font-face {
+  font-family:'Gemunu Libre', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+}
+
+
+#main-pcgamer{
+    height: auto;
+
+    .titulo-destacado{
+      font-family:'Gemunu Libre', sans-serif;
+      color: black;
+      font-size: 70px;
+    }
+.grande{
+  background-color: rgb(202,202,203);
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 3px;
+
+    
+    .image-block {
+      font-family:'Gemunu Libre', sans-serif;
+      border: solid 5px black;
+      padding: 150px;
+      filter: brightness(1.1);
+      mix-blend-mode: multiply;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 375px;
+      height: 667px;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      overflow: hidden;
+      &:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        img {
+          transform: scale(1.25);
+        }
+        figcaption {
+          bottom: 0;
+        }
+      }
+      h1 {
+        font-family:'Gemunu Libre', sans-serif;
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        margin: 0;
+        padding: 0;
+        color: black;
+        font-size: 40px;
+        font-weight: 100;
+        line-height: 1;
+      }
+      img {
+        height: 100%;
+        transition: 0.25s;
+      }
+      figcaption {
+        position: absolute;
+        bottom: -65%;
+        left: 0;
+        width: 100%;
+        //height: 50%;
+        margin: 0;
+        padding: 30px;
+        background-color: rgba(black,0.85);
+        box-shadow: 0 0 20px rgba(black,0.4);
+        color: white;
+        line-height: 1;
+        transition: 0.25s;
+        h3 {
+          margin: 0 0 20px;
+          font-size: 42px;
+          padding: 0;
+        }
+        ul {
+          font-size: 30px;
+          line-height: 1.75;
+        }
+        button {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 10px 0 0;
+          padding: 10px 30px;
+         
+          border: none;
+          border-radius: 5px;
+          color: white;
+          font-size: 14px;
+        }
+      }
+    }
+    
+  
+
+    
+}
+
+// marcas
+
+.cards-list {
+  
+  padding: 100px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card1{
+  border: solid black 2px;
+  
+  width: 200px;
+  height: 150px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card1 .card_image {
+  
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card1 .card_image img {
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+}
+
+.card1 .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card1:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+
+/*
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+}
+*/
+   
+    
+}
